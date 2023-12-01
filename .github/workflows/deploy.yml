@@ -30,6 +30,6 @@ jobs:
         run: npm start
 
       - name: Deploy to GitHub Pages
-        run: npm run deploy
+        run: npm run deploy-gh-pages
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
