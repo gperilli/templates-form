@@ -1,4 +1,4 @@
-# templates-ecshop1
+# templates-form
 
 |   |   |
 |---|---|
@@ -6,7 +6,7 @@
 | [template](https://gperilli.github.io/templates-form/) | [demo](https://gperilli.github.io/templates-form/demo) |
 
 
-This is a HTML single page form frontend template and demo. The design is flat and  works best with pastel colours. The original form project came from freecodecamp responsive web design course [https://www.freecodecamp.org/learn/2022/responsive-web-design/](https://www.freecodecamp.org/learn/2022/responsive-web-design/). I have removed Bootstrap from the source, created a shopping cart and responsive nav bar and reduced everything down to a single page template and demo. 
+This is a HTML single page form frontend template and demo. The design is flat and  works best with pastel colours. The original form project came from the freecodecamp responsive web design course [https://www.freecodecamp.org/learn/2022/responsive-web-design/](https://www.freecodecamp.org/learn/2022/responsive-web-design/). I have removed Bootstrap from the source, created a shopping cart and responsive nav bar and reduced everything down to a single page template and demo. 
 
 
 
