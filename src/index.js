@@ -17,7 +17,6 @@ let root = document.documentElement;
 
 // on load
 window.addEventListener( 'load', function() {
-    // set initial state
     root.style.setProperty('--background-color', formSettings.backgroundColor);
     document.querySelector("#survey-form").style.backgroundColor = formSettings.formColor;
     document.querySelector("#survey-form").style["boxShadow"] = `-${formSettings.formShadowDepth}px ${formSettings.formShadowDepth}px ${formSettings.formShadowColor}`;
