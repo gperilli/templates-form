@@ -3,7 +3,6 @@ import GUI from '/node_modules/lil-gui/dist/lil-gui.esm.js';
 // localStorage Initial Setting
 localStorage.setItem("formSettings-reset", "false")
 if (localStorage.getItem("formSettings") == null || localStorage.getItem("formSettings-reset") == "true") {
-    // load default rhombile Settings
     localStorage.setItem("formSettings", JSON.stringify({
       formColor: "#5d495f",
       formShadowColor: "#a5b625",
