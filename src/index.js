@@ -1,8 +1,6 @@
 import GUI from '/node_modules/lil-gui/dist/lil-gui.esm.js';
 
-/////////////////////////////////////////////////////
 // localStorage Initial Setting
-/////////////////////////////////////////////////////
 localStorage.setItem("formSettings-reset", "false")
 if (localStorage.getItem("formSettings") == null || localStorage.getItem("formSettings-reset") == "true") {
     // load default rhombile Settings
@@ -17,9 +15,7 @@ if (localStorage.getItem("formSettings") == null || localStorage.getItem("formSe
 const formSettings = JSON.parse(localStorage.getItem("formSettings"))
 let root = document.documentElement;
 
-/////////////////////////////////////////////
 // on load
-////////////////////////////////////////////
 window.addEventListener( 'load', function() {
     // set initial state
     root.style.setProperty('--background-color', formSettings.backgroundColor);
@@ -28,9 +24,7 @@ window.addEventListener( 'load', function() {
     root.style.setProperty('--form-text-color', formSettings.formTextColor);
 });
 
-/////////////////////////////////////////////
 // the options menu
-////////////////////////////////////////////
 const gui = new GUI();
 
 const obj = {
