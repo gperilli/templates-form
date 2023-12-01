@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Template</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Gareth Perilli">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Crimson+Text:600,600i,700i|Mada:400,500,700|Poppins:300&amp;display=swap">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Form Template</h1>
+        <p id="description" class="description text-center">
+          Form sub-title and message
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Eg. Gareth Perilli"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Eg. gperilli@outlook.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="number-label" for="number"
+            >Age<span class="clue">(optional)</span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Age"
+          />
+        </div>
+        <div class="form-group">
+          <p>Choose an business sector option:</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Select website/business type</option>
+            <option value="student">Portfolio</option>
+            <option value="job">Ecommerce</option>
+            <option value="learner">Professional Services</option>
+            <option value="learner">Video/Content Production</option>
+            <option value="learner">Software As A Service</option>
+            <option value="preferNo">Business to Business Service</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group checkboxes">
+          <p>
+            Select the web dev technology:
+            <span class="clue">(Check all that apply)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="wordpress"
+              type="checkbox"
+              class="input-checkbox"
+            />Wordpress</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="next"
+              type="checkbox"
+              class="input-checkbox"
+            />Next.js</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="react"
+              type="checkbox"
+              class="input-checkbox"
+            />React.js</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="vue"
+              type="checkbox"
+              class="input-checkbox"
+            />Vue.js</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="challenges"
+              type="checkbox"
+              class="input-checkbox"
+            />Webflow</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="squarespace"
+              type="checkbox"
+              class="input-checkbox"
+            />Squarespace</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="ruby-on-rails"
+              type="checkbox"
+              class="input-checkbox"
+            />Ruby on Rails</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="laravel"
+              type="checkbox"
+              class="input-checkbox"
+            />Laravel</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="others"
+              type="checkbox"
+              class="input-checkbox"
+            />Others</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Would you recommend this form template?</p>
+          <label>
+            <input
+              name="user-recommend"
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+            />Definitely</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+            />Maybe</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+            />Not sure</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>Please leave a comment:</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Enter your comment here..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <div class="btn-wrap">
+            <button type="submit" id="submit" class="btn--dark">
+              Submit
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <script src="dist/main.js" type="module"></script>
+  </body>
+</html>
