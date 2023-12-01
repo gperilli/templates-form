@@ -28,7 +28,6 @@ window.addEventListener( 'load', function() {
     root.style.setProperty('--form-text-color', formSettings.formTextColor);
 });
 
-
 /////////////////////////////////////////////
 // the options menu
 ////////////////////////////////////////////
@@ -41,9 +40,6 @@ const obj = {
   "Form Text Color": formSettings["formTextColor"],
   "Background Color": formSettings["backgroundColor"]
 }
-
-
-
 
 gui.addColor( obj, 'Form Color' ).onChange( value => {
   formSettings.formColor = value;
