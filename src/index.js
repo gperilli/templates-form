@@ -15,7 +15,6 @@ if (localStorage.getItem("formSettings") == null || localStorage.getItem("formSe
     }))
 }
 const formSettings = JSON.parse(localStorage.getItem("formSettings"))
-console.log(formSettings);
 let root = document.documentElement;
 
 /////////////////////////////////////////////
@@ -48,35 +47,30 @@ const obj = {
 
 gui.addColor( obj, 'Form Color' ).onChange( value => {
   formSettings.formColor = value;
-  console.log(formSettings)
   localStorage.setItem("formSettings", JSON.stringify(formSettings))
   document.querySelector("#survey-form").style.backgroundColor = value;
 });
 
 gui.addColor( obj, 'Form Shadow Color' ).onChange( value => {
   formSettings.formShadowColor = value;
-  console.log(formSettings)
   localStorage.setItem("formSettings", JSON.stringify(formSettings))
   document.querySelector("#survey-form").style["boxShadow"] = `-${formSettings.formShadowDepth}px ${formSettings.formShadowDepth}px ${formSettings.formShadowColor}`;
 });
 
 gui.add( obj, 'Form Shadow Depth', 0, 100 ).onChange( value => {
   formSettings.formShadowDepth = Math.floor(value * 0.5);
-  console.log(formSettings)
   localStorage.setItem("formSettings", JSON.stringify(formSettings));
   document.querySelector("#survey-form").style["boxShadow"] = `-${formSettings.formShadowDepth}px ${formSettings.formShadowDepth}px ${formSettings.formShadowColor}`;
 });
 
 gui.addColor( obj, 'Form Text Color' ).onChange( value => {
   formSettings.formTextColor = value;
-  console.log(formSettings)
   localStorage.setItem("formSettings", JSON.stringify(formSettings))
   root.style.setProperty('--form-text-color', value);
 });
 
 gui.addColor( obj, 'Background Color' ).onChange( value => {
   formSettings.backgroundColor = value;
-  console.log(formSettings)
   localStorage.setItem("formSettings", JSON.stringify(formSettings))
   root.style.setProperty('--background-color', value);
 });
